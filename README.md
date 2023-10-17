@@ -58,7 +58,7 @@ CREATE TABLE Nasabah (
     id_nasabah SERIAL PRIMARY KEY,
     nama VARCHAR(255) NOT NULL,
     alamat TEXT NOT NULL,
-    nomor_telepon VARCHAR(20) NOT NULL
+    no_telp VARCHAR(20) NOT NULL
 );
 
 # membuat table Akun dan foreign key ke id_nasabah
@@ -69,7 +69,7 @@ CREATE TABLE Akun (
     saldo NUMERIC(15, 2) DEFAULT 0.00
 );
 
-# membuat table Transaksi
+# membuat table Transaksi dan foreign key ke id_akun
 CREATE TABLE Transaksi (
     id_transaksi SERIAL PRIMARY KEY,
     id_akun INT REFERENCES Akun(id_akun),
