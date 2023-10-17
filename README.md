@@ -28,14 +28,14 @@ Challenge Chapter 3 - RDBMS (Relational Database Management System) - Bootcamp B
 
 - Akun:
   - id_akun (Primary Key)
-  - id_nasabah (Foreign Key mengacu ke id_nasabah di tabel Nasabah)
-  - jenis_akun (contoh: tabungan, deposito, dll.)
+  - id_nasabah (Foreign Key ke id_nasabah di tabel Nasabah)
+  - jenis_akun (contoh: tabungan.)
   - saldo
 
 - Transaksi:
   - id_transaksi (Primary Key)
-  - id_akun (Foreign Key mengacu ke id_akun di tabel Akun)
-  - jenis_transaksi (contoh: penyetoran, penarikan, transfer, dll.)
+  - id_akun (Foreign Key ke id_akun di tabel Akun)
+  - jenis_transaksi (contoh: penyetoran,  transfer.)
   - jumlah
   - tanggal
 
@@ -48,3 +48,12 @@ Challenge Chapter 3 - RDBMS (Relational Database Management System) - Bootcamp B
 ## ERD (Entity-Relationship Diagram):
 ![App Screenshot](erd-binar-challenge-3-database.png)
 
+## Buatkan SQL untuk mendefinisikan table
+```bash
+here
+```
+
+## Buatkan SQL untuk operasi CRUD pada table yang ada
+```bash
+here
+```
