@@ -54,7 +54,7 @@ Challenge Chapter 3 - RDBMS (Relational Database Management System) - Bootcamp B
 - Setiap Transaksi hanya terkait dengan satu Akun (Many-to-One antara Transaksi dan Akun)
 
 ## ERD (Entity-Relationship Diagram):
-![App Screenshot](erd-database-challenge-3.png)
+![App Screenshot](erd-binar-challenge-3-database.png)
 
 ## Buatkan SQL untuk mendefinisikan table
 ```bash
@@ -234,10 +234,5 @@ DELETE FROM Nasabah WHERE id = 1;
 DELETE FROM Akun WHERE id = 3;
 
 # delete transaksi
-<<<<<<< HEAD
 DELETE FROM Transaksi WHERE id = 1;
 ```
-=======
-DELETE FROM Transaksi WHERE id_akun = 1;
-```
->>>>>>> 3bc315ab2731edf386f46c475eced61c313701ae
