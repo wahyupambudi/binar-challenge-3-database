@@ -50,7 +50,33 @@ Challenge Chapter 3 - RDBMS (Relational Database Management System) - Bootcamp B
 
 ## Buatkan SQL untuk mendefinisikan table
 ```bash
-here
+# membuat database
+CREATE DATABASE create_and_insert;
+
+# membuat table Nasabah
+CREATE TABLE Nasabah (
+    id_nasabah SERIAL PRIMARY KEY,
+    nama VARCHAR(255) NOT NULL,
+    alamat TEXT NOT NULL,
+    nomor_telepon VARCHAR(20) NOT NULL
+);
+
+# membuat table Akun dan foreign key ke id_nasabah
+CREATE TABLE Akun (
+    id_akun SERIAL PRIMARY KEY,
+    id_nasabah INT REFERENCES Nasabah(id_nasabah),
+    jenis_akun VARCHAR(50) NOT NULL,
+    saldo NUMERIC(15, 2) DEFAULT 0.00
+);
+
+# membuat table Transaksi
+CREATE TABLE Transaksi (
+    id_transaksi SERIAL PRIMARY KEY,
+    id_akun INT REFERENCES Akun(id_akun),
+    jenis_transaksi VARCHAR(50) NOT NULL,
+    jumlah NUMERIC(15, 2) NOT NULL,
+    tanggal DATE NOT NULL
+);
 ```
 
 ## Buatkan SQL untuk operasi CRUD pada table yang ada
