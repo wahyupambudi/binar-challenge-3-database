@@ -46,7 +46,7 @@ Challenge Chapter 3 - RDBMS (Relational Database Management System) - Bootcamp B
 - Setiap Transaksi hanya terkait dengan satu Akun (Many-to-One antara Transaksi dan Akun)
 
 ## ERD (Entity-Relationship Diagram):
-![App Screenshot](erd-binar-challenge-3-database.png)
+![App Screenshot](erd-database-challenge-3.png)
 
 ## Buatkan SQL untuk mendefinisikan table
 ```bash
